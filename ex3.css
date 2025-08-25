@@ -1,0 +1,33 @@
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+
+}
+.days {
+    background-color: #6d0fe9;
+}
+
+.holiday {
+    color: red;
+}
+
+.room {
+    text-align:center;
+    font-weight: bold;
+}
+.dev{
+    background-color: rgb(18, 117, 203);
+
+}
+.hi{
+    background-color: rgb(204, 26, 115);
+}

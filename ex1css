@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+}
+.name{
+    background-color: aqua;
+}
+.body{
+    background-color: rgb(171, 205, 236);
+}
+a{
+    color:blue;
+    text-decoration:underline; 
+}

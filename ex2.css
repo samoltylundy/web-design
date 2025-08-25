@@ -1,0 +1,12 @@
+table {
+    border:black;
+    border-collapse:collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+.name{
+    background-color:aqua;
+}
