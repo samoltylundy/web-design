@@ -1,0 +1,23 @@
+.all{
+    flex-direction: row;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hi{
+    flex-direction: row;
+    display:flex;
+    gap:10px;
+    padding:20px;
+}
+.gg{
+    font-size: 30px;
+}
+.buttom2{
+    align-items: center;
+    display: flex;
+    flex:1;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}   

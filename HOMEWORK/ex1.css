@@ -1,0 +1,34 @@
+
+.body{
+    background-color: rgb(97, 11, 225);
+    display: flex;
+
+}
+a{
+    color:rgb(254, 252, 253);
+    text-decoration:underline;
+    gap: 50px; 
+    list-style: none;
+}
+.hi{
+    display: flex;
+    
+    gap: 5px;
+}
+.gg{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 3rem;
+    align-items: center;
+    background-color: blue;
+}
+.he{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+button{
+    border-radius: 6px;
+
+}
