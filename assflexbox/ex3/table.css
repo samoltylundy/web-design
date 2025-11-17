@@ -1,0 +1,110 @@
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing-container h1 {
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.plan h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 2rem;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #666;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.features li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+.btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.standard {
+    border: 3px solid #007bff;
+}
+
+.standard .btn {
+    background: #28a745;
+}
+
+.standard .btn:hover {
+    background: #218838;
+}
+
+.premium .btn {
+    background: #ffc107;
+    color: #333;
+}
+
+.premium .btn:hover {
+    background: #e0a800;
+}
