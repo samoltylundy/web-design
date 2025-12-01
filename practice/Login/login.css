@@ -1,0 +1,145 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #5a7a8a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-wrapper {
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+h1 {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full { grid-column: 1 / -1; }
+
+label {
+    color: #1abc9c;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.required::after { content: " *"; color: #1abc9c; }
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+input::placeholder, textarea::placeholder { color: #ccc; }
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.radio-group div, .checkbox-group div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-group label, .checkbox-group label {
+    color: #666;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+}
+
+input[type="radio"], input[type="checkbox"] { cursor: pointer; }
+
+.income-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    flex: 1;
+    cursor: pointer;
+}
+
+.income-display {
+    background: #1abc9c;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="file"] { display: none; }
+
+.file-btn {
+    background: #1abc9c;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.file-name { color: #999; font-size: 13px; }
+
+.create-btn {
+    background: #1abc9c;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.create-btn:hover { background: #16a085; }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h1>Create Account</h1>
+            <form class="form-grid">
+                <div class="form-group">
+                    <label class="required">First name</label>
+                    <input type="text" placeholder="enter your first name">
+                </div>
+
+                <div class="form-group">
+                    <label>Last name</label>
+                    <input type="text" placeholder="enter your last name">
+                </div>
+
+                <div class="form-group full">
+                    <label class="required">Email</label>
+                    <input type="email" placeholder="enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label class="required">Password</label>
+                    <input type="password" placeholder="enter your password">
+                </div>
+
+                <div class="form-group">
+                    <label class="required">Confirm Password</label>
+                    <input type="password" placeholder="enter your password again">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <div><input type="radio" id="male" name="gender"><label for="male">Male</label></div>
+                        <div><input type="radio" id="female" name="gender"><label for="female">Female</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Hobbies</label>
+                    <div class="checkbox-group">
+                        <div><input type="checkbox" id="music"><label for="music">Music</label></div>
+                        <div><input type="checkbox" id="sports"><label for="sports">Sports</label></div>
+                        <div><input type="checkbox" id="travel"><label for="travel">Travel</label></div>
+                        <div><input type="checkbox" id="movies"><label for="movies">Movies</label></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Source of Income</label>
+                    <select>
+                        <option>Employed</option>
+                        <option>Self-employed</option>
+                        <option>Student</option>
+                    </select>  
+                </div>
+
+                <div class="form-group">
+                    <label>Income</label>
+                    <div class="income-group">
+                        <input type="range" min="0" max="100" value="20" id="income">
+                        <span class="income-display" id="incomeValue">20k</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Profile Picture</label>
+                    <div class="file-upload">
+                        <label for="file" class="file-btn">Choose File</label>
+                        <input type="file" id="file" accept="image/*">
+                        <span class="file-name" id="fileName">No file chosen</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" value="18">
+                </div>
+
+                <div class="form-group full">
+                    <label>Bio</label>
+                    <textarea placeholder="Tell us about yourself..."></textarea>
+                </div>
+
+                <div class="full" style="text-align: right;">
+                    <button type="submit" class="create-btn">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        income.oninput = e => incomeValue.textContent = e.target.value + 'k';
+        file.onchange = e => fileName.textContent = e.target.files[0]?.name || 'No file chosen';
+    </script>
+</body>
+</html>
